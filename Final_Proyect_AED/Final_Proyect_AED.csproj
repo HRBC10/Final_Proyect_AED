@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CABC7A65-6F8B-4B43-8D3C-2FFD449B7B48}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Final_Proyect_AED</RootNamespace>
+    <AssemblyName>Final_Proyect_AED</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClssArbolAA3.cs" />
+    <Compile Include="ClssClientesAA4_Ferreteria.cs" />
+    <Compile Include="ClssDetalleAA4_Ferreteria.cs" />
+    <Compile Include="ClssDocenteRA9.cs" />
+    <Compile Include="ClssEmpleadoRA12.cs" />
+    <Compile Include="ClssEstudianteRA9.cs" />
+    <Compile Include="ClssFacturasAA4_Ferreteria.cs" />
+    <Compile Include="ClssModuloAA6Banco.cs" />
+    <Compile Include="ClssModuloAA4Ferreteria.cs" />
+    <Compile Include="ClssModuloRA12.cs" />
+    <Compile Include="ClssPersonaRA7.cs" />
+    <Compile Include="ClssPersonaRA9.cs" />
+    <Compile Include="ClssPrestamosRA12.cs" />
+    <Compile Include="ClssProductoRA10.cs" />
+    <Compile Include="ClssProductoRA6.cs" />
+    <Compile Include="ClssProductosAA4_Ferreteria.cs" />
+    <Compile Include="FrmAA7Ordenacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA7Ordenacion.designer.cs">
+      <DependentUpon>FrmAA7Ordenacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA6_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA6_Principal.designer.cs">
+      <DependentUpon>FrmAA6_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA1_Alumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA1_Alumnos.Designer.cs">
+      <DependentUpon>FrmAA1_Alumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA1_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA1_Empleados.Designer.cs">
+      <DependentUpon>FrmAA1_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA2_CasaComercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA2_CasaComercial.Designer.cs">
+      <DependentUpon>FrmAA2_CasaComercial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA2_EntregaDeProyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA2_EntregaDeProyectos.Designer.cs">
+      <DependentUpon>FrmAA2_EntregaDeProyectos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA4_Ferreteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA4_Ferreteria.Designer.cs">
+      <DependentUpon>FrmAA4_Ferreteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA4_FerreteriaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA4_FerreteriaCliente.Designer.cs">
+      <DependentUpon>FrmAA4_FerreteriaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA4_FerreteriaFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA4_FerreteriaFacturas.Designer.cs">
+      <DependentUpon>FrmAA4_FerreteriaFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA4_FerreteriaFiltroIDCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA4_FerreteriaFiltroIDCliente.Designer.cs">
+      <DependentUpon>FrmAA4_FerreteriaFiltroIDCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA4_FerreteriaFlitroIDFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA4_FerreteriaFlitroIDFactura.Designer.cs">
+      <DependentUpon>FrmAA4_FerreteriaFlitroIDFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA4_FerreteriaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA4_FerreteriaProductos.Designer.cs">
+      <DependentUpon>FrmAA4_FerreteriaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA4_FerreteriaReporteCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA4_FerreteriaReporteCliente.Designer.cs">
+      <DependentUpon>FrmAA4_FerreteriaReporteCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA4_FerreteriaReporteProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA4_FerreteriaReporteProductos.Designer.cs">
+      <DependentUpon>FrmAA4_FerreteriaReporteProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA5_Directorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA5_Directorio.Designer.cs">
+      <DependentUpon>FrmAA5_Directorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA3_Codigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA3_Codigo.designer.cs">
+      <DependentUpon>FrmAA3_Codigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA3_Informacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA3_Informacion.designer.cs">
+      <DependentUpon>FrmAA3_Informacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA5_Caja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA5_Caja.designer.cs">
+      <DependentUpon>FrmAA5_Caja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA7_AlgoritmosBRecursivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA7_AlgoritmosBRecursivo.Designer.cs">
+      <DependentUpon>FrmAA7_AlgoritmosBRecursivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA7_Algoritmos_RConBandera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA7_Algoritmos_RConBandera.Designer.cs">
+      <DependentUpon>FrmAA7_Algoritmos_RConBandera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA7_Algoritmos_RSinBandera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA7_Algoritmos_RSinBandera.Designer.cs">
+      <DependentUpon>FrmAA7_Algoritmos_RSinBandera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA7_BusquedaIterativa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA7_BusquedaIterativa.Designer.cs">
+      <DependentUpon>FrmAA7_BusquedaIterativa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA7_BusquedaRecursiva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA7_BusquedaRecursiva.Designer.cs">
+      <DependentUpon>FrmAA7_BusquedaRecursiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA7_Busquedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA7_Busquedas.Designer.cs">
+      <DependentUpon>FrmAA7_Busquedas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA7_EjecucionBinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA7_EjecucionBinaria.Designer.cs">
+      <DependentUpon>FrmAA7_EjecucionBinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA7_EjecucionBusquedaSecuencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA7_EjecucionBusquedaSecuencial.Designer.cs">
+      <DependentUpon>FrmAA7_EjecucionBusquedaSecuencial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA7_TeoriaBinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA7_TeoriaBinaria.Designer.cs">
+      <DependentUpon>FrmAA7_TeoriaBinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA7_TeoriaSecuencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA7_TeoriaSecuencial.Designer.cs">
+      <DependentUpon>FrmAA7_TeoriaSecuencial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPresentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPresentacion.Designer.cs">
+      <DependentUpon>FrmPresentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA3_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA3_Principal.designer.cs">
+      <DependentUpon>FrmAA3_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA3_Programa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA3_Programa.designer.cs">
+      <DependentUpon>FrmAA3_Programa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA5_PrincipalBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA5_PrincipalBanco.designer.cs">
+      <DependentUpon>FrmAA5_PrincipalBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA10.Designer.cs">
+      <DependentUpon>FrmRA10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA11.Designer.cs">
+      <DependentUpon>FrmRA11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA12.Designer.cs">
+      <DependentUpon>FrmRA12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA12_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA12_Empleado.Designer.cs">
+      <DependentUpon>FrmRA12_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA12_Solicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA12_Solicitud.Designer.cs">
+      <DependentUpon>FrmRA12_Solicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA13.Designer.cs">
+      <DependentUpon>FrmRA13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA14.Designer.cs">
+      <DependentUpon>FrmRA14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA15.Designer.cs">
+      <DependentUpon>FrmRA15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA17.Designer.cs">
+      <DependentUpon>FrmRA17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA18.Designer.cs">
+      <DependentUpon>FrmRA18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA2.Designer.cs">
+      <DependentUpon>FrmRA2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA3.Designer.cs">
+      <DependentUpon>FrmRA3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA4.Designer.cs">
+      <DependentUpon>FrmRA4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA5.Designer.cs">
+      <DependentUpon>FrmRA5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA6.Designer.cs">
+      <DependentUpon>FrmRA6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA7.Designer.cs">
+      <DependentUpon>FrmRA7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA8.Designer.cs">
+      <DependentUpon>FrmRA8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRA9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRA9.Designer.cs">
+      <DependentUpon>FrmRA9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClssNodoAA3.cs" />
+    <Compile Include="FrmAA5_RegistroBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA5_RegistroBanco.designer.cs">
+      <DependentUpon>FrmAA5_RegistroBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA5_Vista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA5_Vista.designer.cs">
+      <DependentUpon>FrmAA5_Vista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAA5_SBancarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAA5_SBancarios.designer.cs">
+      <DependentUpon>FrmAA5_SBancarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAA7Ordenacion.resx">
+      <DependentUpon>FrmAA7Ordenacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA6_Principal.resx">
+      <DependentUpon>FrmAA6_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA1_Alumnos.resx">
+      <DependentUpon>FrmAA1_Alumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA1_Empleados.resx">
+      <DependentUpon>FrmAA1_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA2_CasaComercial.resx">
+      <DependentUpon>FrmAA2_CasaComercial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA2_EntregaDeProyectos.resx">
+      <DependentUpon>FrmAA2_EntregaDeProyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA4_Ferreteria.resx">
+      <DependentUpon>FrmAA4_Ferreteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA4_FerreteriaCliente.resx">
+      <DependentUpon>FrmAA4_FerreteriaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA4_FerreteriaFacturas.resx">
+      <DependentUpon>FrmAA4_FerreteriaFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA4_FerreteriaFiltroIDCliente.resx">
+      <DependentUpon>FrmAA4_FerreteriaFiltroIDCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA4_FerreteriaFlitroIDFactura.resx">
+      <DependentUpon>FrmAA4_FerreteriaFlitroIDFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA4_FerreteriaProductos.resx">
+      <DependentUpon>FrmAA4_FerreteriaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA4_FerreteriaReporteCliente.resx">
+      <DependentUpon>FrmAA4_FerreteriaReporteCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA4_FerreteriaReporteProductos.resx">
+      <DependentUpon>FrmAA4_FerreteriaReporteProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA5_Directorio.resx">
+      <DependentUpon>FrmAA5_Directorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA3_Codigo.resx">
+      <DependentUpon>FrmAA3_Codigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA3_Informacion.resx">
+      <DependentUpon>FrmAA3_Informacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA5_Caja.resx">
+      <DependentUpon>FrmAA5_Caja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA7_AlgoritmosBRecursivo.resx">
+      <DependentUpon>FrmAA7_AlgoritmosBRecursivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA7_Algoritmos_RConBandera.resx">
+      <DependentUpon>FrmAA7_Algoritmos_RConBandera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA7_Algoritmos_RSinBandera.resx">
+      <DependentUpon>FrmAA7_Algoritmos_RSinBandera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA7_BusquedaIterativa.resx">
+      <DependentUpon>FrmAA7_BusquedaIterativa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA7_BusquedaRecursiva.resx">
+      <DependentUpon>FrmAA7_BusquedaRecursiva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA7_Busquedas.resx">
+      <DependentUpon>FrmAA7_Busquedas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA7_EjecucionBinaria.resx">
+      <DependentUpon>FrmAA7_EjecucionBinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA7_EjecucionBusquedaSecuencial.resx">
+      <DependentUpon>FrmAA7_EjecucionBusquedaSecuencial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA7_TeoriaBinaria.resx">
+      <DependentUpon>FrmAA7_TeoriaBinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA7_TeoriaSecuencial.resx">
+      <DependentUpon>FrmAA7_TeoriaSecuencial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPresentacion.resx">
+      <DependentUpon>FrmPresentacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA3_Principal.resx">
+      <DependentUpon>FrmAA3_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA3_Programa.resx">
+      <DependentUpon>FrmAA3_Programa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA5_PrincipalBanco.resx">
+      <DependentUpon>FrmAA5_PrincipalBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA10.resx">
+      <DependentUpon>FrmRA10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA11.resx">
+      <DependentUpon>FrmRA11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA12.resx">
+      <DependentUpon>FrmRA12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA12_Empleado.resx">
+      <DependentUpon>FrmRA12_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA12_Solicitud.resx">
+      <DependentUpon>FrmRA12_Solicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA13.resx">
+      <DependentUpon>FrmRA13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA14.resx">
+      <DependentUpon>FrmRA14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA15.resx">
+      <DependentUpon>FrmRA15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA17.resx">
+      <DependentUpon>FrmRA17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA18.resx">
+      <DependentUpon>FrmRA18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA2.resx">
+      <DependentUpon>FrmRA2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA3.resx">
+      <DependentUpon>FrmRA3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA4.resx">
+      <DependentUpon>FrmRA4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA5.resx">
+      <DependentUpon>FrmRA5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA6.resx">
+      <DependentUpon>FrmRA6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA7.resx">
+      <DependentUpon>FrmRA7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA8.resx">
+      <DependentUpon>FrmRA8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRA9.resx">
+      <DependentUpon>FrmRA9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA5_RegistroBanco.resx">
+      <DependentUpon>FrmAA5_RegistroBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA5_Vista.resx">
+      <DependentUpon>FrmAA5_Vista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAA5_SBancarios.resx">
+      <DependentUpon>FrmAA5_SBancarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
